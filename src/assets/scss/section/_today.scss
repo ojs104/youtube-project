@@ -1,0 +1,63 @@
+#today {}
+
+.today__inner {
+    display: flex;
+    // background-color: var(--black100);
+    border: 1px solid #000;
+    margin-bottom: 40px;
+
+    .today__thumb {
+        width: 40%;
+        background-image: url(https://i.ytimg.com/vi/XcxW1_HKG60/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAxvl1G1Xx9T1-5Yg8SUhgQuz_Zyw);
+        // background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .today__text {
+        width: 60%;
+        height: 310px;
+        padding: 2rem;
+        position: relative;
+
+
+        .today {
+            background-color: #9f70db;
+            color: var(--white);
+            padding: 1px 10px;
+            display: inline-block;
+            border-radius: 40px;
+        }
+
+        .title {
+            line-height: 2;
+            font-size: 1.5rem;
+        }
+
+        .desc {
+            color: var(--black300);
+        }
+
+        .info {
+            position: absolute;
+            left: 2rem;
+            bottom: 2rem;
+
+            .author {
+                // background-color: #e5d8f5e7;
+                border-radius: 40px;
+                padding: 3px 15px;
+                color: #9f70db;
+                font-weight: 600;
+            }
+
+            .data {
+                color: var(--black300);
+                font-size: 14px;
+                padding-left: 1px;
+            }
+
+        }
+    }
+
+}

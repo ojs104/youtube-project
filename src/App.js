@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Today from './pages/Today'
+import Home from './pages/Home'
+import Header from './components/section/Header'
+import Footer from './components/section/Footer'
+import Main from './components/section/Main'
+import Youtuber from './pages/Youtuber'
+import Channel from './pages/Channel'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Header />
+      <Main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/today" element={<Today />} />
+          <Route path="/youtuber" element={<Youtuber />} />
+          <Route path="/channel/:channelId" element={<Channel />} />
+        </Routes>
+      </Main>
+      <Footer />
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
