@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 const youtuber = () => {
     return (
         <section id='youtuber'>
-            <h2>🤭 재즈 유튜버 모음</h2>
+            <h2>🤭 영화리뷰 유튜버 모음</h2>
             <div className='youtuber__inner'>
                 <Swiper
                     slidesPerView={9}

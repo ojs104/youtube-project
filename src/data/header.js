@@ -1,7 +1,7 @@
-import { FcMusic } from "react-icons/fc";
+import { RiMovie2Fill } from "react-icons/ri";
+import { MdMovieFilter } from "react-icons/md";
+import { RiMovieFill } from "react-icons/ri";
 
-import { FcLike } from "react-icons/fc";
-import { FcStart } from "react-icons/fc";
 
 
 
@@ -13,62 +13,62 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 export const menuText = [
     {
-        title: "music playlist",
-        icon: <FcMusic />,
+        title: "movie review",
+        icon: <RiMovie2Fill />,
         src: "/"
     },
     {
         title: "오늘의 추천 픽!!",
-        icon: <FcLike />,
+        icon: <MdMovieFilter />,
         src: "/today"
     },
     {
         title: "유명 유튜버 모음",
-        icon: <FcStart />,
+        icon: <RiMovieFill />,
         src: "/youtuber"
     },
 ]
 
 export const keywordText = [
     {
-        title: "슛포러브",
-        src: "/search/슛포러브"
+        title: "고몽",
+        src: "/search/고몽"
     },
     {
-        title: "제이풋볼",
-        src: "/search/제이풋볼"
+        title: "사우스 코리안 파크",
+        src: "/search/사우스 코리안 파크"
     },
     {
-        title: "리춘수",
-        src: "/search/리춘수"
+        title: "지무비",
+        src: "/search/지무비"
     },
     {
-        title: "이스타TV",
-        src: "/search/이스타TV"
+        title: "어퍼컷Tube",
+        src: "/search/어퍼컷Tube"
     },
     {
         title: "김진짜",
         src: "/search/김진짜"
     },
     {
-        title: "고알레",
-        src: "/search/고알레"
+        title: "김시선",
+        src: "/search/김시선"
     },
     {
-        title: "달수네",
-        src: "/search/달수네"
+        title: "드림텔러(DreamTeller)",
+        src: "/search/드림텔러(DreamTeller)"
     },
     {
-        title: "석꾸",
-        src: "/search/석꾸"
+        title: "어바웃타임",
+        src: "/search/어바웃타임"
     },
     {
-        title: "이거해줘 원희형",
-        src: "/search/이거해줘 원희형"
+        title: "B Man 삐맨",
+        src: "/search/B Man 삐맨"
     },
     {
-        title: "꽁병지TV",
-        src: "/search/꽁병지TV"
+        title: "달빛뮤즈",
+        src: "/search/달빛뮤즈"
     },
 ]
 

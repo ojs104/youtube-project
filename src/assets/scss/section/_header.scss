@@ -17,22 +17,25 @@
             @keyframes logo {
                 0% {
                     transform: rotate(0deg);
-
                     border-radius: 50;
+                    color: yellow;
+                    border-color: yellow;
                 }
 
                 50% {
                     transform: rotate(720deg);
                     border-radius: 50;
-                    background-color: rgb(24, 17, 17);
-                    color: #fff;
-                    border-color: blue;
+                    background-color: var(--white);
+                    color: red;
+                    border-color: red;
 
                 }
 
                 100% {
                     transform: rotate(0deg);
                     border-radius: 0;
+                    color: yellow;
+                    border-color: yellow;
                 }
 
             }
@@ -49,10 +52,11 @@
 
         span {
             font-size: 26px;
-            line-height: 1;
+            line-height: 1.2;
             font-family: "nanumSquareNeo";
             font-weight: 900;
             text-transform: uppercase;
+            color: #fff;
 
         }
     }
@@ -61,11 +65,11 @@
 
 .header__menu {
     padding: 10px;
-    border-top: 1px dotted #1709ef;
+    border-top: 1px dotted red;
 
 
     .menu {
-        border-bottom: 1px dotted #1709ef;
+        border-bottom: 1px dotted red;
         padding: 10px 0;
 
         li {
@@ -75,7 +79,7 @@
                 font-size: 1.2rem;
                 display: block;
                 line-height: 1;
-                color: var(--black100);
+                color: var(--white);
                 padding: 1rem 2rem 1rem 3.8rem;
                 border-radius: 40px;
                 position: relative;
@@ -84,7 +88,7 @@
 
                 &:hover {
 
-                    color: #fff;
+                    color: yellow;
                 }
 
                 svg {
@@ -93,14 +97,14 @@
                     position: absolute;
                     left: 1.25rem;
                     top: 0.8rem;
-                    color: blueviolet;
+                    color: yellow;
                 }
             }
 
             &.active {
                 a {
-                    background-color: rgb(139, 150, 255, 1);
-                    border: 1px solid blue;
+                    background-color: red;
+                    border: 1px solid rgb(223, 79, 79);
                 }
             }
         }
@@ -118,18 +122,18 @@
                 display: inline-block;
                 line-height: 1.3;
                 margin: 5px;
-                color: var(--black300);
+                color: var(--white);
                 padding: 0.5rem 1rem 0.5rem 1rem;
                 border-radius: 40px;
                 position: relative;
                 transition: background-color 0.2s;
-                border: 1px solid lightcoral;
+                // border: 1px solid red;
                 font-weight: 700;
 
                 &:hover {
-                    background-color: #e8b6d9;
-                    color: var(--white);
-                    border-color: rgb(234, 27, 224);
+                    // background-color: yellow;
+                    color: yellow;
+
                 }
             }
         }
