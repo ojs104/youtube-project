@@ -59,3 +59,22 @@ section {
         }
     }
 }
+
+//로딩 소스 
+.isLoading {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.isLoading::before {
+    content: '로딩 중..';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.isLoaded {
+    opacity: 1;
+    transition: opacity 1s;
+}

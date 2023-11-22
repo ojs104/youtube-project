@@ -1,13 +1,17 @@
 import React from 'react'
 import { youtuberText } from '../data/youtuber'
 import { Link } from 'react-router-dom'
+import Main from '../components/section/Main'
 
 const Youtuber = () => {
     return (
-        <>
+        <Main
+            title='유명 유튜버 모음'
+            description='영화 유튜버 모음 입니다. 영화 유튜버들을 모두 확인할 수 있습니다.'
+        >
 
             <section id='youtuberPage'>
-                <h2>🤭 Music playlist 유튜버 모음</h2>
+                <h2>🤭 유명 유튜버 모음</h2>
                 <div className='youtuber__inner '>
                     {youtuberText.map((youtuber, key) => (
                         <div className='youtuber play__icon' key={key}>
@@ -23,7 +27,7 @@ const Youtuber = () => {
                 </div>
             </section >
 
-        </>
+        </Main>
     )
 }
 

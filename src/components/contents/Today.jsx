@@ -5,7 +5,10 @@ const Today = () => {
     return (
         <section id='today'>
             <div className="today__inner">
-                <div className="today__thumb"></div>
+                <div className="today__thumb">
+                    <img src={todayText[0].img} alt='썸네일사진' />
+
+                </div>
                 <div className="today__text">
                     <span className='today'>오늘의 픽</span>
                     <h3 className='title'>{todayText[0].title}</h3>

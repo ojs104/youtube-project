@@ -1,12 +1,5 @@
 export const youtuberText = [
     {
-        img: "https://yt3.googleusercontent.com/Q5NILve5GWBbdJV7lf6NArRHjvhd9ZoeTFWfbkPGB94jdrlQBw9xjciX3jrgJ1pjxh3wXFZIag=s176-c-k-c0x00ffffff-no-rj",
-        author: "사우스 코리안 파크 South Korean Park",
-        channelId: "UCM5Ij_HwT8V6xPT9cRBFjJw",
-        channelAddress: "https://www.youtube.com/@SouthKoreanPark",
-
-    },
-    {
         img: "https://yt3.googleusercontent.com/ytc/APkrFKbi9J1ZozCocWV3FMYI81mMWpdXtWSZ15hysy-x=s176-c-k-c0x00ffffff-no-rj",
         author: "고몽",
         channelId: "UCpcft4FJXgUjnxWoQYsl7Ug",
@@ -14,10 +7,10 @@ export const youtuberText = [
 
     },
     {
-        img: "https://yt3.googleusercontent.com/ytc/APkrFKbmmmxB14i2L-vXnCmW92-cLR-nfBN6AfChyvrggQ=s176-c-k-c0x00ffffff-no-rj",
-        author: "지무비 : G Movie",
-        channelId: "UCaHGOzOyeYzLQeKsVkfLEGA",
-        channelAddress: "UCaHGOzOyeYzLQeKsVkfLEGA",
+        img: "https://yt3.googleusercontent.com/Q5NILve5GWBbdJV7lf6NArRHjvhd9ZoeTFWfbkPGB94jdrlQBw9xjciX3jrgJ1pjxh3wXFZIag=s176-c-k-c0x00ffffff-no-rj",
+        author: "사우스 코리안 파크 South Korean Park",
+        channelId: "UCM5Ij_HwT8V6xPT9cRBFjJw",
+        channelAddress: "https://www.youtube.com/@SouthKoreanPark",
 
     },
     {
@@ -25,6 +18,27 @@ export const youtuberText = [
         author: "어퍼컷Tube",
         channelId: "UCuK80YHBZyyKrr2B1oHrgrw",
         channelAddress: "https://www.youtube.com/@UPKTV",
+
+    },
+    {
+        img: "https://yt3.googleusercontent.com/ytc/APkrFKZi42r-6yR81CQT9wW8qliiQx5dVHEBnzRSYbEIjA=s176-c-k-c0x00ffffff-no-rj",
+        author: "리뷰엉이: Owl's Review",
+        channelId: "UCrBpV_pG2kyMMEHCMTNzjAQ",
+        channelAddress: "https://www.youtube.com/@Owlsreview",
+
+    },
+    {
+        img: "https://yt3.googleusercontent.com/_jWWV0MMAXeyUV1OqC8SZ4c6cqin7kayz5Pn2IM6j0Dvm2lu9MfOq4UIQ9eWBCVa2TWs3jsYKOI=s176-c-k-c0x00ffffff-no-rj",
+        author: "달빛뮤즈",
+        channelId: "UCMguxwveCsLVpyKrLz-EFTg",
+        channelAddress: "https://www.youtube.com/@DALBITMUSE",
+
+    },
+    {
+        img: "https://yt3.googleusercontent.com/ytc/APkrFKbmmmxB14i2L-vXnCmW92-cLR-nfBN6AfChyvrggQ=s176-c-k-c0x00ffffff-no-rj",
+        author: "지무비 : G Movie",
+        channelId: "UCaHGOzOyeYzLQeKsVkfLEGA",
+        channelAddress: "UCaHGOzOyeYzLQeKsVkfLEGA",
 
     },
     {
@@ -55,20 +69,6 @@ export const youtuberText = [
         author: "B Man 삐맨",
         channelId: "UCxlv4aOnrRTXMRSL8bVJqEw",
         channelAddress: "https://www.youtube.com/@bman",
-
-    },
-    {
-        img: "https://yt3.googleusercontent.com/_jWWV0MMAXeyUV1OqC8SZ4c6cqin7kayz5Pn2IM6j0Dvm2lu9MfOq4UIQ9eWBCVa2TWs3jsYKOI=s176-c-k-c0x00ffffff-no-rj",
-        author: "달빛뮤즈",
-        channelId: "UCMguxwveCsLVpyKrLz-EFTg",
-        channelAddress: "https://www.youtube.com/@DALBITMUSE",
-
-    },
-    {
-        img: "https://yt3.googleusercontent.com/ytc/APkrFKZi42r-6yR81CQT9wW8qliiQx5dVHEBnzRSYbEIjA=s176-c-k-c0x00ffffff-no-rj",
-        author: "리뷰엉이: Owl's Review",
-        channelId: "UCrBpV_pG2kyMMEHCMTNzjAQ",
-        channelAddress: "https://www.youtube.com/@Owlsreview",
 
     },
     {

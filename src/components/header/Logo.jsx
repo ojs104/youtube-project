@@ -1,16 +1,15 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 import { BiSolidCameraMovie } from "react-icons/bi";
 
 
-import { Link } from 'react-router-dom';
 
-const Logo = () => {
+const Logo = ({ toggleMenu }) => {
     return (
         <h1 className='header__logo'>
             <Link to='/'>
-                <em><BiSolidCameraMovie /></em>
-                <span>영화리뷰 <br /> 유튜버</span>
+                <em onClick={toggleMenu}><BiSolidCameraMovie /></em>
+                <span>Movie<br /> Youtube</span>
             </Link>
         </h1>
     )

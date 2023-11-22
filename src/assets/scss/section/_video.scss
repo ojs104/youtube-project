@@ -2,63 +2,104 @@
     display: grid;
     grid-template-columns: repeat(4, 24%);
     justify-content: space-between;
+    min-height: 100vh;
+
+    @media (max-width: 1400px) {
+        grid-template-columns: repeat (3, 32%);
+        gap: 15px;
+    }
+
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat (2, 49%);
+        gap: 10px;
+    }
+
+    @media (max-width: 400px) {
+        grid-template-columns: repeat (1, 100%);
+        gap: 15px;
+    }
 
     .video {
         margin-bottom: 50px;
-        border: 1px solid red;
-        padding: 16px;
+        border: 1px solid pink;
+        box-shadow: 2px 2px 5px rgba(242, 198, 234, 0.84);
+    }
 
-        .video__thumb {
+    padding: 16px;
+
+    .video__thumb {
+
+        a {
+            display: block;
+            cursor: pointer;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .video__info {
+
+
+        .title {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            // @include line-one;
 
             a {
-                display: block;
-                cursor: pointer;
-                width: 100%;
-                padding-bottom: 56.25%;
-                background-size: cover;
-                background-position: center;
-            }
-        }
-
-        .video__info {
-
-            .title {
-                margin-top: 10px;
-                margin-bottom: 5px;
-                // @include line-one;
-            }
-
-            .desc {
-                width: 100%;
-                // @include line(3);
-                color: var(--black300);
-                margin-bottom: 10px;
-            }
-
-            .info {
-                display: flex;
-                justify-content: space-between;
-                color: var(--black300);
-
-                .author {
-                    // @include line-one;
-                    font-size: 14px;
-                    text-decoration: underline;
-                    text-underline-position: under;
-
-                    &:hover {
-                        color: var(--black100);
-                    }
-                }
-
-                .date {
-                    white-space: nowrap;
-                    font-size: 14px;
-                }
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                color: var(--black100);
+                font-weight: bold;
+                margin-bottom: 15px;
             }
         }
     }
+
+    .desc {
+        width: 100%;
+        // @include line(3);
+        color: var(--black400);
+        margin-bottom: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        color: var(--black300);
+
+
+
+        .author {
+            // @include line-one;
+            font-size: 14px;
+            text-decoration: underline;
+            text-underline-position: under;
+
+            &:hover {
+                color: var(--black100);
+            }
+        }
+
+        .date {
+            white-space: nowrap;
+            font-size: 14px;
+        }
+    }
 }
+
+
 
 // 비디오 상세 페이지
 .video__view {
@@ -74,7 +115,7 @@
         .video__title {
             padding-top: 20px;
             margin-bottom: 20px;
-            font-size: 30px;
+            font-size: 25px;
             border-bottom: 1px solid var(--black600);
             padding-bottom: 15px;
 
@@ -87,11 +128,14 @@
             margin-top: 40px;
 
             .id {
+                font-size: 20px;
+                color: var(--pink);
 
                 a {
-                    border: 1px solid var(--black300);
-                    padding: 7px 20px;
+
+                    padding: 7px 1px;
                     border-radius: 30px;
+
                 }
             }
 
@@ -139,10 +183,10 @@
     min-width: 200px;
     min-height: 50px;
     background: linear-gradient(90deg,
-            rgba(129, 230, 217, 1) 0%,
-            rgba(79, 209, 197, 1) 100%);
+            rgba(180, 80, 114, 1.00) 0%,
+            rgba(255, 80, 114, 1.00) 100%);
     border-radius: 1000px;
-    color: darkslategray;
+    color: #fff;
     cursor: pointer;
     box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
     font-weight: 700;
@@ -157,7 +201,7 @@
         width: 30px;
         height: 30px;
         border-radius: 100%;
-        border: 6px solid #00ffcb;
+        border: 6px solid var(--pink);
         position: absolute;
         z-index: -1;
         top: 50%;
@@ -176,5 +220,63 @@
             transform: scale(8.5);
             opacity: 0;
         }
+    }
+}
+
+// video__slider
+.video__slider {
+    .video {
+        .video__thumb {
+
+            a {
+                display: block;
+                cursor: pointer;
+                width: 100%;
+                padding-bottom: 56.25%;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .video__info {
+            background-color: rgba(255, 222, 222, 0.376);
+            padding: 14px;
+            border: 1px solid rgba(255, 222, 222, 0.694);
+
+            .title {
+                // @include line-one;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 16px;
+            }
+
+            .info {
+                display: flex;
+                justify-content: space-between;
+                color: var(--black300);
+
+                .author {
+                    // @include line-one;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    font-size: 14px;
+                    text-decoration: underline;
+                    text-underline-position: under;
+
+                    &:hover {
+                        color: var(--black100);
+                    }
+                }
+
+                .date {
+                    // white-space: nowrap;
+                    // font-size: 14px;
+                    display: none;
+                }
+            }
+        }
+
     }
 }

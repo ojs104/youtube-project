@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../header/Logo'
 import Menu from '../header/Menu'
 import Sns from '../header/Sns'
 
 
 const Header = () => {
+    const [isMenuActive, setIsMenuActive] = useState(false);
+
+    const toggleMenu = (e) => {
+        e.preventDefault();
+        setIsMenuActive(!isMenuActive);
+    }
     return (
-        <div id="header" role='banner'>
-            <Logo />
+        <header id="header" className={isMenuActive ? 'show' : ''} role='banner'>
+            <Logo toggleMenu={toggleMenu} />
             <Menu />
             <Sns />
 
-        </div>
+        </header>
     )
 }
 

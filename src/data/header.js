@@ -32,43 +32,64 @@ export const menuText = [
 export const keywordText = [
     {
         title: "고몽",
+        icon: <RiMovieFill />,
         src: "/search/고몽"
     },
     {
         title: "사우스 코리안 파크",
+        icon: <RiMovieFill />,
         src: "/search/사우스 코리안 파크"
     },
     {
-        title: "지무비",
-        src: "/search/지무비"
+        title: "리뷰엉이 Owl's Review",
+        icon: <RiMovieFill />,
+        src: "/search/리뷰엉이 Owl's Review"
     },
     {
-        title: "어퍼컷Tube",
-        src: "/search/어퍼컷Tube"
-    },
-    {
-        title: "김진짜",
-        src: "/search/김진짜"
-    },
-    {
-        title: "김시선",
-        src: "/search/김시선"
+        title: "달빛뮤즈",
+        icon: <RiMovieFill />,
+        src: "/search/달빛뮤즈"
     },
     {
         title: "드림텔러(DreamTeller)",
+        icon: <RiMovieFill />,
         src: "/search/드림텔러(DreamTeller)"
     },
     {
         title: "어바웃타임",
+        icon: <RiMovieFill />,
         src: "/search/어바웃타임"
     },
     {
+        title: "김시선",
+        icon: <RiMovieFill />,
+        src: "/search/김시선"
+    },
+    {
         title: "B Man 삐맨",
+        icon: <RiMovieFill />,
         src: "/search/B Man 삐맨"
     },
     {
-        title: "달빛뮤즈",
-        src: "/search/달빛뮤즈"
+        title: "어퍼컷Tube",
+        icon: <RiMovieFill />,
+        src: "/search/어퍼컷Tube"
+    },
+
+    {
+        title: "구불",
+        icon: <RiMovieFill />,
+        src: "/search/구불"
+    },
+    {
+        title: "지무비",
+        icon: <RiMovieFill />,
+        src: "/search/지무비"
+    },
+    {
+        title: "빨강도깨비",
+        icon: <RiMovieFill />,
+        src: "/search/빨강도깨비"
     },
 ]
 

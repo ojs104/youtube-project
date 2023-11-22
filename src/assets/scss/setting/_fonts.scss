@@ -69,3 +69,15 @@
         url("../../fonts/nanumSquareNeo-Black.woff") format("woff");
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'ReciaSerifDisplay';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/recia/ReciaSerifDisplay.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/recia/ReciaSerifDisplay.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/recia/ReciaSerifDisplay.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/recia/ReciaSerifDisplay.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/recia/ReciaSerifDisplay.ttf') format("truetype");
+    font-display: swap;
+}
