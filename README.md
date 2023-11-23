@@ -3,7 +3,7 @@
 평소에 영화를 좋아하기 때문에 ......
 
 ## 완성작 보기
-미리보기 : 
+ 
 <img src="https://ojs104.github.io/youtube-project/src/assets/img/cover-min.jpg">
 
 
