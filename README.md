@@ -2,7 +2,7 @@
 유튜브 API를 이용해서 영화보는 사이트를 만들겠습니다.
 평소에 영화를 좋아하기 때문에 ......
 
-<img src="https://ojs104.github.io/youtube-project/src/assets/img/cover-min.jpg"
+<img src="https://ojs104.github.io/youtube-project/src/assets/img/cover-min.jpg">
 ## 완성작 보기
 미리보기 : 
 
