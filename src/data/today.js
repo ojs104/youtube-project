@@ -1,6 +1,6 @@
 export const todayText = [
     {
-        img: "https://i.ytimg.com/an_webp/einCP0GbtS0/mqdefault_6s.webp?du=3000&sqp=CPyV9aoG&rs=AOn4CLDGjGPXJjfE788_3CSDQtgdweUT2A",
+        img: "https://i.ytimg.com/vi/uffu8V2I-5g/hqdefault_custom_1.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIEwoPDAP&rs=AOn4CLCXIQNnLmE3qiEOKktbPr1vrhmy-w",
         title: "와 ㄹㅇ존잼..ㅋㅋ[고려거란전쟁] 3-4떳다",
         desc: "힘을 숨기고 지방 공무원하던 강감찬을 전장으로 불러버린 거란의 달달한 최후, 미쳐버린 정통사극이 돌아왔다! 강추!",
         author: "고몽",
