@@ -52,8 +52,8 @@ const Channel = () => {
 
     return (
         <Main
-            title='영화 유튜버 채널'
-            description='영화 유튜버 채널 페이지 입니다. 영화 유튜버의 영상을 모두 확인할 수 있습니다.'
+            title='축구 유튜버 채널'
+            description='축구 유튜버 채널 페이지 입니다. 축구 유튜버의 영상을 모두 확인할 수 있습니다.'
         >
 
             <section id='channelPage' className={channelPageClass}>

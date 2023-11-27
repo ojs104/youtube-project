@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { BiSolidCameraMovie } from "react-icons/bi";
+import { AiFillTrophy } from "react-icons/ai";
+
 
 
 
@@ -8,7 +9,7 @@ const Logo = ({ toggleMenu }) => {
     return (
         <h1 className='header__logo'>
             <Link to='/'>
-                <em onClick={toggleMenu}><BiSolidCameraMovie /></em>
+                <em onClick={toggleMenu}><AiFillTrophy /></em>
                 <span>football<br />youtube</span>
             </Link>
         </h1>

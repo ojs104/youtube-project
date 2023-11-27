@@ -56,11 +56,11 @@ const Home = () => {
             <Youtuber />
 
 
-            <VideoSlider videos={channelVideo1} title="😎 슛포러브 최신영상" name='v1' />
-            <VideoSlider videos={channelVideo2} title="😎 리춘수 최신영상" name='v2' />
-            <VideoSlider videos={channelVideo3} title="😎 이대호 최신영상" name='v3' />
-            <VideoSlider videos={channelVideo4} title="😎 JK 아트사커 온라인 최신영상" name='v4' />
-            <VideoSlider videos={channelVideo5} title="😎 감스트 최신영상" name='v5' />
+            <VideoSlider videos={channelVideo1} title="😆 슛포러브 최신영상" name='v1' />
+            <VideoSlider videos={channelVideo2} title="😆 리춘수 최신영상" name='v2' />
+            <VideoSlider videos={channelVideo3} title="😆 이대호 최신영상" name='v3' />
+            <VideoSlider videos={channelVideo4} title="😆 JK 아트사커 온라인 최신영상" name='v4' />
+            <VideoSlider videos={channelVideo5} title="😆 감스트 최신영상" name='v5' />
 
 
         </Main >

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { FaClapperboard } from "react-icons/fa6";
+import { BsEmojiLaughing } from "react-icons/bs";
 
 import VideoSearch from '../components/video/VideoSearch';
 import { fetchFromAPI } from '../utils/api';
@@ -46,10 +46,10 @@ const searchPageClass = loading ? 'isLoading' : 'isLoaded'
     return (
 
         <Main
-            title="다큐멘터리 검색"
+            title="유튜브 검색"
             description="원하는 유튜브 영상을 검색해 주세요">
             <section id="searchPage">
-                <h2><FaClapperboard /> {searchId} 검색결과입니다.</h2>
+                <h2><BsEmojiLaughing /> {searchId} 검색결과입니다.</h2>
 
                 <div className={`video__inner ${searchPageClass}`}>
                     <VideoSearch videos={videos} />
