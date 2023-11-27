@@ -14,21 +14,19 @@ const Channel = () => {
     const { channelId } = useParams();
     const [channelDetail, setChannelDetail] = useState();
     const [channelVideo, setChannelVideo] = useState([]);
-
+    const [loading, setLoading] = useState(true);
     const [nextPageToken, setNextPageToken] = useState(null);
-    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         const fetchResults = async () => {
             try {
                 const data = await fetchFromAPI(`channels?part=snippet&id=${channelId}`);
-                // console.log(data)
                 setChannelDetail(data.items[0]);
+                // console.log(data)
 
-                const videoData = await fetchFromAPI(`search?channelId=${channelId}&part=snippet&order=date`);
-                // console.log(videoData);
-                setChannelVideo(videoData.items);
-                setNextPageToken(videoData.nextPageToken);
+                const videoData = await fetchFromAPI(`search?channelId=${channelId}&part=snippet&order=date`)
+                setChannelVideo(videoData.items)
+                setNextPageToken(videoData?.nextPageToken);
             } catch (error) {
                 console.log("Error -> ", error);
             } finally {
@@ -42,12 +40,13 @@ const Channel = () => {
     //더보기 기능
     const loadMoreVideos = async () => {
         if (nextPageToken) {
-            const videosData = await fetchFromAPI(`search?channelId=${channelId}&part=snippet%2Cid&order=date&pageToken=${nextPageToken}`);
-            setChannelVideo(prevVideos => [...prevVideos, ...videosData.items]);//... spread 배열
+            const videosData = await fetchFromAPI(`search?channelId=${channelId}&part=snippet&order=date&pageToken=${nextPageToken}`)
+            setChannelVideo(prevVideos => [...prevVideos, ...videosData.items]);
             setNextPageToken(videosData?.nextPageToken);
         }
     }
 
+// 로딩
     const channelPageClass = loading ? 'isLoading' : 'isLoaded';
 
 
@@ -61,7 +60,7 @@ const Channel = () => {
                 {channelDetail && (
 
                     <div className="channel__inner">
-                        <div className="channel__header" style={{ backgroundImage: `url(${channelDetail.brandingSettings.image.bannerExternalUrl})` }}>
+                        <div className='channel__header' style={{ backgroundImage: `url(${channelDetail.brandingSettings.image.bannerExternalUrl})` }}>
                             <div className='circle'>
                                 <img src={channelDetail.snippet.thumbnails.high.url} alt={channelDetail.snippet.title} />
                             </div>
@@ -75,8 +74,7 @@ const Channel = () => {
                                 <span><FaRegBell />{channelDetail.statistics.subscriberCount}</span>
                             </div>
                         </div>
-
-                        <div className="channel__video video__inner search">
+<div className="channel__video video__inner">
                             <VideoSearch videos={channelVideo} layout="channel" />
                         </div>
                         <div className="channel__more">

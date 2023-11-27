@@ -18,9 +18,9 @@
                 0% {
                     transform: rotate(0deg);
                     border-radius: 50;
-                    color: var(--pink);
+                    color: black;
                     background-color: var(--white);
-                    border-color: pink;
+                    border-color: whitesmoke;
                 }
 
                 50% {
@@ -28,7 +28,7 @@
                     border-radius: 50;
                     background-color: var(--white);
                     color: black;
-                    border-color: red;
+                    border-color: whitesmoke;
 
                 }
 
@@ -36,8 +36,8 @@
                     transform: rotate(0deg);
                     border-radius: 0;
                     background-color: var(--white);
-                    color: var(--pink);
-                    border-color: lightcoral;
+                    color: black;
+                    border-color: whitesmoke;
                 }
 
             }
@@ -55,14 +55,14 @@
         span {
             font-size: 28px;
             line-height: 1.2;
-            font-family: var(--mainfont-nexon);
-            font-weight: 800;
+            font-family: var(--mainEng-font);
+            font-weight: 900;
             text-transform: uppercase;
             // color: rgba(255, 80, 114, 1.00);
-            color: #ffffff;
+            color: black;
 
             &:hover {
-                color: rgba(255, 80, 114, 1.00);
+                color: #ffffff;
             }
         }
     }
@@ -71,11 +71,11 @@
 
 .header__menu {
     padding: 10px;
-    border-top: 1px dotted red;
+    border-top: 1px dotted goldenrod;
 
 
     .menu {
-        border-bottom: 1px dotted red;
+        border-bottom: 1px dotted goldenrod;
         padding: 10px 0;
 
         li {
@@ -85,7 +85,8 @@
                 font-size: 1.2rem;
                 display: block;
                 line-height: 1;
-                color: rgb(149, 6, 55);
+                // color: rgb(149, 6, 55);
+                color: black;
                 padding: 1rem 2rem 1rem 3.8rem;
                 border-radius: 40px;
                 position: relative;
@@ -129,7 +130,8 @@
                 display: inline-block;
                 line-height: 1.3;
                 // margin: 5px;
-                color: rgb(149, 6, 55);
+                // color: rgb(149, 6, 55);
+                color: black;
                 padding: 0.5rem 1rem 0.5rem 1rem;
                 border-radius: 40px;
                 position: relative;
@@ -141,7 +143,7 @@
 
                 &:hover {
                     // background-color: yellow;
-                    color: var(--pink);
+                    color: #ffffff;
                 }
             }
         }
@@ -156,7 +158,7 @@
     right: 0;
     text-align: center;
     padding: 18px 0 12px;
-    background-color: plum;
+    background-color: gold;
 
     li {
         display: inline-block;

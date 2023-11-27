@@ -13,7 +13,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 export const menuText = [
     {
-        title: "movie review",
+        title: "축구ㄴ 유튜버 홈",
         icon: <RiMovie2Fill />,
         src: "/"
     },
@@ -31,65 +31,65 @@ export const menuText = [
 
 export const keywordText = [
     {
-        title: "고몽",
+        title: "슛포러브",
         icon: <RiMovieFill />,
-        src: "/search/고몽"
+        src: "/search/슛포러브"
     },
     {
-        title: "사우스 코리안 파크",
+        title: "리춘수",
         icon: <RiMovieFill />,
-        src: "/search/사우스 코리안 파크"
+        src: "/search/리춘수"
     },
     {
-        title: "리뷰엉이 Owl's Review",
+        title: "이대호 [RE:DAEHO]",
         icon: <RiMovieFill />,
-        src: "/search/리뷰엉이 Owl's Review"
+        src: "/search/이대호 [RE:DAEHO]"
     },
     {
-        title: "달빛뮤즈",
+        title: "JK 아트사커 온라인",
         icon: <RiMovieFill />,
-        src: "/search/달빛뮤즈"
+        src: "/search/JK 아트사커 온라인"
     },
     {
-        title: "드림텔러(DreamTeller)",
+        title: "감스트GAMST",
         icon: <RiMovieFill />,
-        src: "/search/드림텔러(DreamTeller)"
+        src: "/search/감스트GAMST"
     },
     {
-        title: "어바웃타임",
+        title: "SPOiler 스포일러",
         icon: <RiMovieFill />,
-        src: "/search/어바웃타임"
+        src: "/search/SPOiler 스포일러"
     },
     {
-        title: "김시선",
+        title: "#Like_Football 라이크풋볼",
         icon: <RiMovieFill />,
-        src: "/search/김시선"
+        src: "/search/#Like_Football 라이크풋볼"
     },
     {
-        title: "B Man 삐맨",
+        title: "이스타TV",
         icon: <RiMovieFill />,
-        src: "/search/B Man 삐맨"
+        src: "/search/이스타TV"
     },
     {
-        title: "어퍼컷Tube",
+        title: "스포타임",
         icon: <RiMovieFill />,
-        src: "/search/어퍼컷Tube"
+        src: "/search/스포타임"
     },
 
     {
-        title: "구불",
+        title: "맹피셜",
         icon: <RiMovieFill />,
-        src: "/search/구불"
+        src: "/search/맹피셜"
     },
     {
-        title: "지무비",
+        title: "김진짜 Real KIM",
         icon: <RiMovieFill />,
-        src: "/search/지무비"
+        src: "/search/김진짜 Real KIM"
     },
     {
-        title: "빨강도깨비",
+        title: "원투펀치",
         icon: <RiMovieFill />,
-        src: "/search/빨강도깨비"
+        src: "/search/원투펀치"
     },
 ]
 

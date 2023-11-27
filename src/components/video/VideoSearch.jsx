@@ -14,7 +14,7 @@ const VideoSearch = ({ videos, layout = '' }) => {
         <>
             {videos.map((video, key) => (
                 <div className={`video ${layout}`} key={key}>
-                    <div className='video__thumb play__icon'>
+                    <div className="video__thumb play__icon">
                         <Link
                             to={`/video/${video.id.videoId}`}
                             style={{ backgroundImage: `url(${video.snippet.thumbnails.high.url})` }}
@@ -25,7 +25,7 @@ const VideoSearch = ({ videos, layout = '' }) => {
                         <h3 className='title'>
                             <Link to={`/video/${video.id.videoId}`}>{video.snippet.title}</Link>
                         </h3>
-                        <p className="desc">
+                        <p className='desc'>
                             {video.snippet.description}
                         </p>
                         <div className='info'>

@@ -9,7 +9,7 @@ const Logo = ({ toggleMenu }) => {
         <h1 className='header__logo'>
             <Link to='/'>
                 <em onClick={toggleMenu}><BiSolidCameraMovie /></em>
-                <span>Movie<br /> Youtube</span>
+                <span>football<br />youtube</span>
             </Link>
         </h1>
     )

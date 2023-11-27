@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { youtuberText } from '../data/youtuber'
 import { Link } from 'react-router-dom'
 import Main from '../components/section/Main'
@@ -7,7 +8,7 @@ const Youtuber = () => {
     return (
         <Main
             title='유명 유튜버 모음'
-            description='영화 유튜버 모음 입니다. 영화 유튜버들을 모두 확인할 수 있습니다.'
+            description='유명 유튜버 모음 입니다. 유명 유튜버들을 모두 확인할 수 있습니다.'
         >
 
             <section id='youtuberPage'>
@@ -17,7 +18,7 @@ const Youtuber = () => {
                         <div className='youtuber play__icon' key={key}>
                             <div className='youtuber__img'>
                                 <Link to={`/channel/${youtuber.channelId}`}>
-                                    <img src={youtuber.img} alt={youtuber.img} />
+                                    <img src={youtuber.img} alt={youtuber.author} />
                                 </Link>
                             </div>
                             <div className='youtuber__info'>{youtuber.author}</div>
