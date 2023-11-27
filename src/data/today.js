@@ -1,106 +1,105 @@
 export const todayText = [
-    {
-        img: "https://i.ytimg.com/vi/uffu8V2I-5g/hqdefault_custom_1.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIEwoPDAP&rs=AOn4CLCXIQNnLmE3qiEOKktbPr1vrhmy-w",
-        title: "와 ㄹㅇ존잼..ㅋㅋ[고려거란전쟁] 3-4떳다",
-        desc: "힘을 숨기고 지방 공무원하던 강감찬을 전장으로 불러버린 거란의 달달한 최후, 미쳐버린 정통사극이 돌아왔다! 강추!",
-        author: "고몽",
-        date: "2023.11.20",
-        videoId: "",
-        channelId: "",
+    
+    {   
+        img: "https://i.ytimg.com/an_webp/Vq0KL_jyDYo/mqdefault_6s.webp?du=3000&sqp=CMqkk6sG&rs=AOn4CLCMSeSN8ooRJ4fZU1n1njYs4RwKqQ",
+        title: "백승호가 바르셀로나로 갈 수 있었던 이유... '바르셀로나 가고 싶어? 이게 그 차이야' l 월드클래스FC 3 : 꼬레아 무적함대 EP.9",
+        desc: "바쁜 와중에 월클 아이들을 위해 시간내 준 백승호 선수 감사합니다 😆 그와중에 츄러스 맛집.. 바르셀로나 가면 꼭 가볼 곳... 메모...",
+        author: "슛포러브",
+        date: "2023.11.27",
+        videoId: "Vq0KL_jyDYo",
+        channelId: "UCdTDdygpZKdDew2s1s419iw",
 
     },
     {
-        img: "https://i.ytimg.com/an_webp/WzBoVPN5ilk/mqdefault_6s.webp?du=3000&sqp=COK69aoG&rs=AOn4CLDhlf6Pb_GDg5BGBAjAllKRPiiH8Q",
-        title: "수능",
-        desc: "대학을 꼭 가야하나?",
-        author: "사우스 코리안 파크 South Korean Park",
-        date: "2023.11.17",
-        videoId: "",
-        channelId: "",
+    
+        img: "https://i.ytimg.com/an_webp/NeTKqOzwCWY/mqdefault_6s.webp?du=3000&sqp=CNSWk6sG&rs=AOn4CLAt7PeY3XAbr_V0MrO_eksCUCT49A",
+        title: "아나운서했던동생이랑쌀라",
+        desc: "리춘수의 쌀라쌀라 EP2",
+        author: "리춘수",
+        date: "2023.11.27",
+        videoId: "NeTKqOzwCWY",
+        channelId: "UChI3EXzhAkRszawlMageKvQ",
 
     },
     {
-        img: "https://i.ytimg.com/an_webp/RrPZE6NqC0s/mqdefault_6s.webp?du=3000&sqp=CJPM9aoG&rs=AOn4CLD3GOgD9UF1i7rzd8itQbgAOmEvFA",
-        title: "인류 문명은 무조건 멸망할 수밖에 없다? 대여과기 가설!",
-        desc: "대여과기 가설에 따르면 인류 문명 뿐만 아니라 우주 어딘가에 존재할 모든 생명과 외계 문명들도 매우 높은 확률로 멸망할 수밖에 없다고 한다. 대여과기 가설은 왜 이런 디스토피아적 가설을 냈을까?",
-        author: "리뷰엉이 Owl's Review",
-        date: "2023.11.18",
-        videoId: "",
-        channelId: "",
+        img: "https://i.ytimg.com/an_webp/FagxP5lt8VU/mqdefault_6s.webp?du=3000&sqp=COyYk6sG&rs=AOn4CLD8eynM-vFQHxrQC_eqv2KKc6CHkA",
+        title: "이대호가 말하는 FA 계약 과정",
+        desc: "퍼가실 때 본문에 출처와 링크를 꼭 기입해주세요. 구독 좋아요 알림설정 감사합니다",
+        author: "이대호 [RE:DAEHO]",
+        date: "2023.11.25",
+        videoId: "FagxP5lt8VU",
+        channelId: "UCPoTjCZvUOkECBNm6ezsVEA",
 
     },
     {
-        img: "https://i.ytimg.com/an_webp/G5cVA3I2kdY/mqdefault_6s.webp?du=3000&sqp=CM7Q9aoG&rs=AOn4CLCVGasm2uEDn8-1sHvZzuQIwMoTyQ",
-        title: "신이 만든 코인을 가지게 된 인간에게 일어난 일",
-        desc: "신들의 장난 아니 전쟁이 시작 되었다 근데 신들의 상태가 이상해",
-        author: "달빛뮤즈",
-        date: "2023.11.11",
-        videoId: "",
-        channelId: "",
+        img: "https://i.ytimg.com/an_webp/y-PjvjUVieQ/mqdefault_6s.webp?du=3000&sqp=CLSEk6sG&rs=AOn4CLAVpaqcipRJF6brhKi58KKnXLPfjw",
+        title: "[축구천재 검증] 군대에서 터득한 양발 드리블",
+        desc: "타고난 축구 자질을 검증해 보는 콘텐츠입니다. 신헌주 도전자의 재능! 여러분도 함께 판단해 주세요~",
+        author: "JK 아트사커 온라인",
+        date: "2023.11.26",
+        videoId: "PjvjUVieQ",
+        channelId: "UCT8DsZlac7D1_dx6d8Kh_Qw",
+
+    },
+   
+    {
+        img: "https://i.ytimg.com/an_webp/dt8eq-74O-g/mqdefault_6s.webp?du=3000&sqp=CMD9kqsG&rs=AOn4CLBD34gEe-VCjKJ7hLdi6deBblxS8Q",
+        title: "감스트 가르나초 오버헤드킥 원더골!! 맨유 3-0 승리!!",
+        desc: "[2023.11.27] 방송영상 입니다.",
+        author: "감스트GAMST",
+        date: "2023.11.27",
+        videoId: "dt8eq-74O-g",
+        channelId: "UCbFzvzDu17eDZ3RIeaLRswQ",
+    },  
+   
+    {
+        img: "https://i.ytimg.com/an_webp/lfdIFSXyhQU/mqdefault_6s.webp?du=3000&sqp=CJDykqsG&rs=AOn4CLAjF4r4V7h2_OeSbHsX435lw8ofBA",
+        title: "프리미어리그 4-4 명승부 TOP5 l 맨유튜브 × 스포티비",
+        desc: "안녕하세요 맨유튜브입니다:) 오늘은 프리미어리그 빅클럽들이 펼쳤던 꿀잼 경기들 바로 프리미어리그 4-4 명승부 경기들을 준비했습니다. 재미있게 시청해 주셨다면 '구독' 부탁드립니다! ",
+        author: "SPOiler 스포일러",
+        date: "2023.11.24",
+        videoId: "lfdIFSXyhQU",
+        channelId: "UCPxCAB6hvZw20ckLaIFxUJQ",
 
     },
     {
-        img: "https://i.ytimg.com/an_webp/Dso_3g_eohs/mqdefault_6s.webp?du=3000&sqp=CO-z9aoG&rs=AOn4CLC-nv_Z-6kMUvmHQSPikhjO53kGpw",
-        title: "서울의 봄",
-        desc: "지금 예매율 1위 올 하반기 최고 기대작이라는 그 영화 ㅎㄷㄷ......",
-        author: "드림텔러",
-        date: "2023.11.17",
-        videoId: "",
-        channelId: "",
+        img: "https://i.ytimg.com/vi/Brtjjvjjzms/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDY9yE9guwGdcvM9Zh5rSWPBdsj5Q",
+        title: "해리 케인이 바이에른 뮌헨에서 역대급 득점 행진을 선보이는 '특별한' 이유",
+        desc: " #김민재 #바이에른뮌헨 #해리케인 #김민재 #바이에른뮌헨",
+        author: "#Like_Football 라이크풋볼",
+        date: "2023.11.22",
+        videoId: "Brtjjvjjzms",
+        channelId: "UCCYujSLBIK8EDlAM3xi-0Rw",
 
     },
     {
-        img: "https://i.ytimg.com/an_webp/f671xiAu96s/mqdefault_6s.webp?du=3000&sqp=CJHb9aoG&rs=AOn4CLCbD5jfpsu3Z_rs9Vqi8j21WyXoWQ",
-        title: "낚시나 하며 조용히 살려던 전쟁영웅의 조카를 건드렸다가 몰살 당해버리는 쑤레기 나치 장교들의 최후ㄷㄷ 현재 전세계 70개국 1위!! 명작 소설 원작",
-        desc: "오늘 소개해드릴 우리가 볼 수 없는 모든 빛",
-        author: "어바웃 타임",
-        date: "2023.11.11",
-        videoId: "",
-        channelId: "",
+        img: "https://i.ytimg.com/an_webp/vEnYZNTwya4/mqdefault_6s.webp?du=3000&sqp=CNCMk6sG&rs=AOn4CLAlHaxDqTiVG0RIMg--6rpxXxsttQ",
+        title: "손흥민 해트트릭! 했지만 오프사이드.. 받쳐주는 선수가 없다!",
+        desc: "클루세프스키 공미 데뷔전 브라이언 힐이 백패스만 하는 이유 오프사이드 해트트릭.. 로셀소 선제골 하지만 역전패 3연패 토트넘 위기 ..",
+        author: "말년 호빙요",
+        date: "2023.11.27",
+        videoId: "vEnYZNTwya4",
+        channelId: "UCAw2WahIbrnJlryCh_bq56Q",
+
+    },
+  
+    {
+        img: "https://i.ytimg.com/an_webp/_1JVY0QzSto/mqdefault_6s.webp?du=3000&sqp=CNz2kqsG&rs=AOn4CLAiERPQ1PQLbRbiRg0vY3zJ9A-bnw",
+        title: "토트넘팬vs맨유팬vs첼시팬, 누가 더 아프냐...?",
+        desc: "00:00 히든풋볼 월요일, 01:03 [광고] 리즈랩 바이알 이뮨 플러스, 07:11 [대표팀] 한중일 모인 23세 아시안컵, 13:10 [분데스] 낭만의 우니온 베를린, 피셔 감독과 작별, 14:29 [PL] 좋은 라이벌, 펩과 클롭, 26:08 [PL] 토트넘, 맨유, 첼시… 어느 팀 팬이 더 힘들까?, 42:42 [유로] 유로2024 간단 정리, 53:02 [K리그] 치열했던 슈퍼매치, 서울 0:1 수원, 59:03 [K리그] 강등권 순위 경쟁, 1:08:33 [K리그] K리그2 간단 정리 스크립트",
+        author: "이스타TV",
+        date: "2023.11.27",
+        videoId: "_1JVY0QzSto",
+        channelId: "UCn9mJ4htO64-1osMWYu9k5Q",
     },
     {
-        img: "https://i.ytimg.com/an_webp/EKvfzOT1ueM/mqdefault_6s.webp?du=3000&sqp=CNHd9aoG&rs=AOn4CLDTpwkbXXI_6N-IWbgTw_j-k-9ZQg",
-        title: "글로벌 아이돌 스타라고.. 선배한테 갑질하는 여자 아이돌 가수가 단 번에 실력으로 참교육 당하면서 진짜 가수가 뭔지 배우는 드라마 ㄷㄷ",
-        desc: "볼수록 힐링되는 tvN 드라마 '무인도의 디바'🔥  [월화] 토, 일 저녁 9시 20분 tvN, 티빙에서 시청 가능 !",
-        author: "김시선",
-        date: "2023.11.21",
-        videoId: "",
-        channelId: "",
-
+        img: "https://i.ytimg.com/an_webp/65YKmyiGi5A/mqdefault_6s.webp?du=3000&sqp=CKCik6sG&rs=AOn4CLDFJ36tWOIKx5aLFq-hk6apDRlCZg",
+        title: "3연패 토트넘' 손흥민, 팬들에게 죄송합니다",
+        desc: "손흥민이 아스톤 빌라와의 프리미어리그 13R 경기 후 인터뷰를 진행했습니다. 자세한 내용은 영상으로 확인하시죠~ ",
+        author: "스포타임",
+        date: "2023.11.27",
+        videoId: "65YKmyiGi5A",
+        channelId: "UCnXNukjRxXGD8aeZGRV-lYg",
     },
-    {
-        img: "https://i.ytimg.com/an_webp/Vcfr-zLbe3o/mqdefault_6s.webp?du=3000&sqp=CJDF9aoG&rs=AOn4CLClNmnG8QpaSwQ2j4pgX6-z5pCvTg",
-        title: "이걸..? 한국에서 만들고 칸에서 3위에 등극해버린 슈퍼히어로 시리즈ㄷㄷ",
-        desc: "〈라바〉 제작진이 만든 NEW 히어로 애니메이션의 탄생! 100명의 히어로와 엉망이 된 도시를 구하기 위한 특급 미션이 시작된다!",
-        author: "B MAN 삐맨",
-        date: "2023.11.19",
-        videoId: "",
-        channelId: "",
-
-    },
-    {
-        img: "https://i.ytimg.com/an_webp/vy5juJ55Z_Q/mqdefault_6s.webp?du=3000&sqp=CPzM9aoG&rs=AOn4CLDsqzJSWrgFvnmCaxrC0lTCW-e6LQ",
-        title: "인생을 바꾸고 싶다면 꼭 알아야 하는 오타니의 습관",
-        desc: "《오타니 쇼헤이: 비욘드 더 드림》은 디즈니 플러스에서 시청 가능합니다",
-        author: "어퍼컷",
-        date: "2023.11.18",
-        videoId: "",
-        channelId: "",
-
-    },
-    {
-        img: "https://i.ytimg.com/an_webp/7Wv_jQ4P3JM/mqdefault_6s.webp?du=3000&sqp=CNOg9aoG&rs=AOn4CLCtyNNxNw-lKp7cslCbG_6i9hRDVQ",
-        title: "2억 주고 헤어지라고 했던 재벌집 시어머니가 아들이 남자를 만나자 제발 만나달라고 빈다.ㅋㅋㅋ",
-        desc: "드라마 뷰티 인사이드.",
-        author: "구불",
-        date: "2023.11.16",
-        videoId: "",
-        channelId: "",
-
-    },
-
-
-
-
 
 ]

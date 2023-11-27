@@ -1,13 +1,17 @@
 import React from 'react'
 import { todayText } from '../../data/today'
+import { Link } from 'react-router-dom'
 
 const Today = () => {
     return (
         <section id='today'>
             <div className="today__inner">
                 <div className="today__thumb">
-                    <img src={todayText[0].img} alt='썸네일사진' />
-
+                    <Link
+                        to={`/video/aAnnDaWzf4o`}
+                        style={{ backgroundImage: `url(${todayText[0].img})` }}
+                    >
+                    </Link>
                 </div>
                 <div className="today__text">
                     <span className='today'>오늘의 픽</span>

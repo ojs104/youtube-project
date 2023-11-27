@@ -1,18 +1,17 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { Navigation } from 'swiper/modules';
 
-const VideoSlider = ({ name, videos, title }) => {
-    return (
-        <section id={name}>
-            <h2>{title}</h2>
+const VideoSlider = ({ videos, title, name }) => {
 
-            <div className="video__slider">
+    return (
+        <section>
+            <h2>{title}</h2>
+<div className='video__slider'>
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={20}
@@ -30,12 +29,12 @@ const VideoSlider = ({ name, videos, title }) => {
                         },
                         1024: {
                             slidesPerView: 4,
-                            spaceBetween: 20
+spaceBetween: 20
                         },
                         1600: {
                             slidesPerView: 5,
                             spaceBetween: 20
-                        }
+                                                }
                     }}
                 >
                     {videos.map((video, key) => (
@@ -60,9 +59,8 @@ const VideoSlider = ({ name, videos, title }) => {
                     ))}
                 </Swiper>
             </div>
-
-        </section>
-    )
+</section >
+    );
 }
 
-export default VideoSlider
+export default VideoSlider;
