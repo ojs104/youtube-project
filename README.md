@@ -34,16 +34,13 @@
 - 검색페이지 컴포넌트를 만든 후 검색기능 구현
 
 
-- 
-
 ## SEO
 react-helmet-async 라이브러리는 React 애플리케이션에서 동적으로 HTML `<head>` 요소를 관리하기 위한 도구입니다. 이 라이브러리의 HelmetProvider와 Helmet 컴포넌트는 페이지의 `<head>` 내부에 있는 메타데이터를 조작하고 제어하는 데 사용됩니다.
 
 - HelmetProvider: HelmetProvider는 react-helmet-async 라이브러리의 컨텍스트를 제공합니다. 이를 통해 Helmet 컴포넌트들이 애플리케이션 내에서 동적으로 `<head>` 요소를 조작할 수 있도록 합니다. 주로 최상위 레벨에서 애플리케이션을 감싸 사용됩니다.
 
-- Helmet: Helmet은 `<head>` 요소 안의 정보를 조작할 수 있게 해주는 컴포넌트입니다. 페이지 제목(title), 메타 태그(meta tags), 스타일시트 링크, 스크립트 등 `<head>` 안의 요소들을 동적으로 변경하거나 추가할 수 있습니다. title, meta, link, script 등을 설정하여 해당 정보를 동적으로 변경할 수 있습니다.
-
-Main.jsx에 적용된 코드에서는 HelmetProvider로 전체 앱을 감싸고 있으며, Helmet 컴포넌트를 사용하여 페이지의 제목, 기본 타이틀, 메타 태그(description) 등을 동적으로 조작하고 있습니다. 또한, props.children을 사용하여 Main 컴포넌트로 전달된 다른 컴포넌트들을 표시하고 있습니다.
+- Helmet: Helmet은 `<head>` 요소 안의 정보를 조작할 수 있게 해주는 컴포넌트입니다. 페이지 제목(title), 메타 태그(meta tags), 스타일시트 링크, 스크립트 등 `<head>` 안의 요소들을 동적으로 변경하거나 추가할 수 있습니다. title, meta, link, script 등을 설정하여 해당 정보를 동적으로 변경할 수 있습니다.<br>
+Main.jsx에 적용된 코드에서는 HelmetProvider로 전체 앱을 감싸고 있으며, Helmet 컴포넌트를 사용하여 페이지의 제목, 기본 타이틀, 메타 태그(description) 등을 동적으로 조작하고 있습니다. 또한, props.children을 사용하여 Main 컴포넌트로 전달된 다른 컴포넌트들을 표시하고 있습니다.<br>
 
 - scrollTo: 이 함수는 JavaScript에서 제공하는 window 객체의 메소드로, 특정 위치로 스크롤을 이동시키는 역할을 합니다. scrollTo 메소드는 두 개의 매개변수를 받습니다. 첫 번째 매개변수는 x 좌표(가로 위치), 두 번째 매개변수는 y 좌표(세로 위치)입니다. 이 함수를 사용하여 사용자가 웹 페이지의 특정 위치로 쉽게 이동할 수 있도록 도와줍니다.
 
