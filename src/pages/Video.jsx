@@ -2,21 +2,21 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { fetchFromAPI } from '../utils/api';
 import ReactPlayer from 'react-player';
-import { AiFillEye, AiFillLike, AiFillMessage  } from 'react-icons/ai';
+import { AiFillEye, AiFillLike, AiFillMessage } from 'react-icons/ai';
 import Main from '../components/section/Main';
 
 
 
 const Video = () => {
-        const { videoId } = useParams();
+    const { videoId } = useParams();
     const [videoDetail, setVideoDetail] = useState(null);
-    
+
     useEffect(() => {
-                fetchFromAPI(`videos?part=snippet,statistics&id=${videoId}`)
+        fetchFromAPI(`videos?part=snippet,statistics&id=${videoId}`)
             .then((data) => {
-console.log(data)
+                console.log(data)
                 setVideoDetail(data.items[0])
-                })
+            })
     }, [videoId])
 
     return (
@@ -27,7 +27,7 @@ console.log(data)
             <section id='videoPage'>
                 <h2>비디오</h2>
                 {videoDetail && (
-                    <div className='video__View'>
+                    <div className='video__view'>
                         <div className='video__play'>
                             <ReactPlayer
                                 playing={true}
