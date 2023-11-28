@@ -8,7 +8,7 @@ const Today = () => {
             <div className="today__inner">
                 <div className="today__thumb">
                     <Link
-                        to={`/video/aAnnDaWzf4o`}
+                        to={`/video/Vq0KL_jyDYo`}
                         style={{ backgroundImage: `url(${todayText[0].img})` }}
                     >
                     </Link>

@@ -10,12 +10,19 @@ import Main from '../components/section/Main';
 const Video = () => {
     const { videoId } = useParams();
     const [videoDetail, setVideoDetail] = useState(null);
+    const [comments, setComments] = useState([]);
+
 
     useEffect(() => {
         fetchFromAPI(`videos?part=snippet,statistics&id=${videoId}`)
             .then((data) => {
                 console.log(data)
                 setVideoDetail(data.items[0])
+            })
+        fetchFromAPI(`commentThreads?part=snippet&videoId=${videoId}`)
+            .then((data) => {
+                setComments(data.items);
+                console.log(data)
             })
     }, [videoId])
 
@@ -48,6 +55,18 @@ const Video = () => {
                                     <span className='like'><AiFillLike />{videoDetail.statistics.likeCount}</span>
                                     <span className='comment'><AiFillMessage />{videoDetail.statistics.commentCount}</span>
                                 </div>
+                            </div>
+                            <div className='video__comment'>
+                                {comments.map((comment, key) => (
+                                    <div className="comment__all" key={key}>
+                                        <div className="comment__nickname">
+                                            {comment.snippet.topLevelComment.snippet.authorDisplayName}
+                                        </div>
+                                        <div className="comment__cont">
+                                            {comment.snippet.topLevelComment.snippet.textOriginal}
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                             <div className='video__desc'>
                                 {videoDetail.snippet.description}

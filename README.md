@@ -46,25 +46,61 @@ FOOTBALL YOUTUBE에서는 축구의 아름다움과 깊이 있는 내용을 탐�
 - 검색페이지 컴포넌트를 만든 후 검색기능 구현
 
 
-## 사용 프로그램
+### 메인 페이지 SEO 설정하기
+
+- 리액트는 싱글 페이지로 구성되어 있기 때문에 SEO에 대한 노출이 약한 편입니다. 그래서 리액트의 단점을 극복하기 위한 방법으로 페이지 별로 페이지에 대한 설명이나 타이틀을 작업해주겠습니다. 이 작업을 하기 위해서는 react-helmet-async 라이브러리가 설치되어 있어야 합니다. 
+                        
+`SEO는 "Search Engine Optimization"의 약어로, 검색 엔진 최적화를 의미합니다. SEO는 웹사이트나 웹 페이지를 검색 엔진(예: Google, Bing, Yahoo)에서 높은 순위로 표시되도록 최적화하는 프로세스와 전략을 나타냅니다. 이를 통해 웹사이트가 검색 결과 페이지(SERP)에서 더 높은 순위에 나타나고, 더 많은 유기적(자연적) 트래픽을 확보하려는 목적으로 사용됩니다.`
+
 
 - react-helmet-async 라이브러리는 React 애플리케이션에서 동적으로 HTML `<head>` 요소를 관리하기 위한 도구입니다. 이 라이브러리의 HelmetProvider와 Helmet 컴포넌트는 페이지의 `<head>` 내부에 있는 메타데이터를 조작하고 제어하는 데 사용됩니다.
 
-- HelmetProvider: HelmetProvider는 react-helmet-async 라이브러리의 컨텍스트를 제공합니다. 이를 통해 Helmet 컴포넌트들이 애플리케이션 내에서 동적으로 `<head>` 요소를 조작할 수 있도록 합니다. 주로 최상위 레벨에서 애플리케이션을 감싸 사용됩니다.
+- HelmetProvider: react-helmet-async의 HelmetProvider 컴포넌트를 사용하여 Helmet 컴포넌트를 초기화합니다. Helmet은 페이지의 헤드 태그에 메타 데이터와 타이틀을 동적으로 추가하거나 변경하는 데 사용됩니다.
 
-- Helmet: Helmet은 `<head>` 요소 안의 정보를 조작할 수 있게 해주는 컴포넌트입니다. 페이지 제목(title), 메타 태그(meta tags), 스타일시트 링크, 스크립트 등 `<head>` 안의 요소들을 동적으로 변경하거나 추가할 수 있습니다. title, meta, link, script 등을 설정하여 해당 정보를 동적으로 변경할 수 있습니다.<br>
-Main.jsx에 적용된 코드에서는 HelmetProvider로 전체 앱을 감싸고 있으며, Helmet 컴포넌트를 사용하여 페이지의 제목, 기본 타이틀, 메타 태그(description) 등을 동적으로 조작하고 있습니다. 또한, props.children을 사용하여 Main 컴포넌트로 전달된 다른 컴포넌트들을 표시하고 있습니다.<br>
+- Helmet: Helmet : Helmet 컴포넌트를 사용하여 페이지의 메타 데이터와 타이틀을 설정합니다. 이 컴포넌트를 사용하면 서버 사이드 렌더링(SSR) 및 동적 페이지 제목 설정과 같은 작업을 쉽게 수행할 수 있습니다. 주로 title, meta, link, script 등의 태그를 동적으로 조작하는 데 사용됩니다.
 
-- scrollTo: 이 함수는 JavaScript에서 제공하는 window 객체의 메소드로, 특정 위치로 스크롤을 이동시키는 역할을 합니다. scrollTo 메소드는 두 개의 매개변수를 받습니다. 첫 번째 매개변수는 x 좌표(가로 위치), 두 번째 매개변수는 y 좌표(세로 위치)입니다. 이 함수를 사용하여 사용자가 웹 페이지의 특정 위치로 쉽게 이동할 수 있도록 도와줍니다.
+- titleTemplate : 페이지 타이틀의 템플릿을 설정합니다. %s는 나중에 실제 타이틀로 대체됩니다.
 
-- Suspense :
+- defer : true로 설정하면 렌더링 전까지 <Helmet> 컴포넌트가 기다립니다.
+
+- <meta name='description' content={props.description} /> : props로 전달된 title과 description 값을 사용하여 페이지의 타이틀과 메타 설명을 설정합니다. props.title과 props.description이 없는 경우, 기본값으로 "Football Youtube"가 타이틀로 설정됩니다.
+
+### useEffect 
+useEffect는 React 함수 컴포넌트에서 비동기 작업을 수행하거나 부수 효과를 다룰 때 사용되는 특별한 훅(Hook) 중 하나입니다. 
+주로 컴포넌트의 생명주기 메소드(예: componentDidMount, componentDidUpdate, componentWillUnmount)와 비슷한 역할을 하며, 
+컴포넌트의 상태나 DOM 업데이트와 관련된 작업을 수행하는 데 사용됩니다.<br>
+부수 효과 처리: 비동기 작업(데이터 가져오기, API 호출, 타이머 설정 등)을 수행할 수 있습니다. 이러한 작업은 컴포넌트의 렌더링과 독립적으로 처리됩니다.
+상태 업데이트: useState 훅을 사용하여 상태를 변경하고, 변경된 상태에 따른 추가적인 렌더링을 트리거합니다.
+DOM 조작: 컴포넌트가 화면에 렌더링된 후에 DOM 요소를 조작하거나 이벤트 처리 등을 수행할 수 있습니다.
+
+### useState
+useState 훅은 상태 관리를 위해 사용됩니다. 함수형 컴포넌트 내에서 상태를 생성하고 업데이트할 수 있게 해줍니다. 예를 들어, const [count, setCount] = useState(0)와 같이 사용할 수 있습니다. count는 현재 상태 값이고, setCount는 상태를 업데이트하는 함수입니다.
+### useEffect 
+useEffect 훅은 부수 효과를 다루기 위해 사용됩니다. 컴포넌트가 마운트, 업데이트, 혹은 언마운트될 때 특정 작업(비동기 작업, 상태 업데이트, DOM 조작 등)을 수행할 수 있습니다.
+### useContext
+useContext 훅은 컨텍스트를 활용하여 컴포넌트 간에 상태를 공유할 때 사용됩니다. React.createContext로 생성한 컨텍스트를 사용하여 값을 공유하거나 설정할 수 있습니다.
+### useReducer
+useReducer 훅은 상태 업데이트를 다룰 때 사용됩니다. 클래스 컴포넌트에서 setState 대신 사용할 수 있으며, 복잡한 상태 관리에 유용합니다.
+### useRef 
+useRef 훅은 ref 객체를 생성하고 다룰 때 사용됩니다. 주로 DOM 요소에 접근하거나 다른 목적으로 ref를 사용할 때 활용됩니다.
+### useMemo 및 useCallback 
+useMemo와 useCallback 훅은 성능 최적화를 위해 사용됩니다. useMemo는 계산 비용이 높은 값을 캐시하고, useCallback은 메모이제이션된 함수를 생성합니다.
+### Custom Hooks 
+사용자 정의 훅을 생성하여 컴포넌트 간 코드 재사용을 간편하게 할 수 있습니다. 예를 들어, 데이터 가져오기, 로컬 스토리지 액세스, 인증 등을 처리하는 훅을 만들 수 있습니다.
+
+### useNavigate
+useNavigate는 React Router v6에서 새로 도입된 훅입니다. useNavigate를 사용하면 컴포넌트가 소유한 navigation을 직접 제어할 수 있게 됩니다.
+
+
+### scrollTo
+이 함수는 JavaScript에서 제공하는 window 객체의 메소드로, 특정 위치로 스크롤을 이동시키는 역할을 합니다. scrollTo 메소드는 두 개의 매개변수를 받습니다. 첫 번째 매개변수는 x 좌표(가로 위치), 두 번째 매개변수는 y 좌표(세로 위치)입니다. 이 함수를 사용하여 사용자가 웹 페이지의 특정 위치로 쉽게 이동할 수 있도록 도와줍니다.
+
+### Suspense :
 React Suspense는 리액트의 비동기 데이터 로딩을 처리하기 위한 기능입니다. 기존에는 데이터를 불러오는 동안 로딩 상태를 관리하기 위해 별도의 로딩<br> 컴포넌트를 만들거나 상태 변수를 사용해야 했습니다. 하지만 React Suspense를 사용하면 이러한 비동기 데이터 로딩을 더욱 간편하게 처리할 수 있습니다.<br>
 React Suspense는 두 가지 주요 요소로 구성됩니다.<br>
 Suspense 컴포넌트: 데이터 로딩이 완료될 때까지 다른 컴포넌트를 대신하여 보여줄 수 있는 컴포넌트입니다.<br>
 Suspense 컴포넌트는 하위 컴포넌트들을 감싸고, fallback prop을 통해 로딩 중에 보여줄 컴포넌트나 UI를 지정할 수 있습니다.<br><br>
 lazy 함수: 코드 스플리팅을 통해 컴포넌트의 번들 크기를 줄이기 위해 사용되는 함수입니다. lazy 함수는 동적으로 로딩할 컴포넌트를 지연 로딩(lazy loading)하기 위해 사용됩니다. lazy 함수로 생성된 컴포넌트는 Suspense 컴포넌트와 함께 사용될 수 있습니다.
-
-- useNavigate: useNavigate는 React Router v6에서 새로 도입된 훅입니다. useNavigate를 사용하면 컴포넌트가 소유한 navigation을 직접 제어할 수 있게 됩니다.
 
 ### Swiper 사용법
 

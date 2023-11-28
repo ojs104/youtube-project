@@ -21,8 +21,8 @@
 
     .video {
         margin-bottom: 50px;
-        border: 1px solid pink;
-        box-shadow: 2px 2px 5px rgba(242, 198, 234, 0.84);
+        border: 1px solid gold;
+        box-shadow: 2px 2px 5px rgba(235, 242, 198, 0.84);
     }
 
     padding: 16px;
@@ -156,6 +156,28 @@
                     }
                 }
             }
+
+
+        }
+
+        .video__comment {
+
+            .comment__all {
+                background-color: floralwhite;
+                border: 1px dotted rgb(237, 230, 189);
+                border-radius: 5%;
+
+
+                .comment__nickname {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                .comment__cont {
+                    font-size: 16px;
+                }
+            }
+
         }
     }
 

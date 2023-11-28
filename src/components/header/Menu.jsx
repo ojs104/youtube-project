@@ -13,7 +13,7 @@ const Menu = () => {
                 {menuText.map((menu, key) => (
                     <li key={key} className={location.pathname === menu.src ? 'active' : ''}>
                         <Link to={menu.src}>
-                            {menu.icon} {menu.title}
+                            {menu.icon}{menu.title}
                         </Link>
                     </li>
 
@@ -23,10 +23,9 @@ const Menu = () => {
                 {keywordText.map((keyword, key) => (
                     <li key={key} className={decodeURIComponent(location.pathname) === keyword.src ? 'active' : ''}>
                         <Link to={keyword.src}>
-                            {keyword.icon} {keyword.title}
+                            {keyword.icon}{keyword.title}
                         </Link>
                     </li>
-
                 ))}
             </ul>
         </nav>
