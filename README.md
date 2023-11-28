@@ -80,55 +80,58 @@ lazy 함수: 코드 스플리팅을 통해 컴포넌트의 번들 크기를 줄�
     안에있는 key 값을 가져와 퍼스트맨의 Get에 넣어주고 기존에 받은 APIKEY값을 넣어준다.  
 
 ### 더보기 기능 :
-    1. 더 보기 버튼을 통하여 추가로 검색 결과를 불러오는 기능입니다. nextPageToken을 사용하여 페이지를 변경하고, 가져온 데이터를 이전에 있는 비디오 목록에 추가하였습니다.
+1. 더 보기 버튼을 통하여 추가로 검색 결과를 불러오는 기능입니다. nextPageToken을 사용하여 페이지를 변경하고, 가져온 데이터를 이전에 있는 비디오 목록에 추가하였습니다.
 
-    2. [유튜브](https://rapidapi.com/Glavier/api/youtube-v311/)키 값을 가져옵니다.   
-    .env에 키 값을 안보이게 넣어주고  button을 만들어 안에 함수를 적용해줍니다.   
-    키 값안에 있는 nextPageToken 코드를 가져와서 더보기 기능을 수행합니다.
+2. [유튜브](https://rapidapi.com/Glavier/api/youtube-v311/)키 값을 가져옵니다.   
+.env에 키 값을 안보이게 넣어주고  button을 만들어 안에 함수를 적용해줍니다.   
+키 값안에 있는 nextPageToken 코드를 가져와서 더보기 기능을 수행합니다.
 
-    3. 상태 설정: const [videos, setVideos] = useState([]); : videos라는 상태 변수를 만들어 빈 배열로 초기화합니다. 이 배열은 유튜브에서 받아온 비디오 정보를 담습니다. const [nextpageToken, setNextPageToken] = useState(null); : nextpageToken이라는 상태 변수를 만들어 초기값을 null로 설정합니다. 이 변수는 다음 페이지의 토큰을 저장합니다.
+3. 상태 설정: const [videos, setVideos] = useState([]); : videos라는 상태 변수를 만들어 빈 배열로 초기화합니다. 이 배열은 유튜브에서 받아온 비디오 정보를 담습니다. const [nextpageToken, setNextPageToken] = useState(null); : nextpageToken이라는 상태 변수를 만들어 초기값을 null로 설정합니다. 이 변수는 다음 페이지의 토큰을 저장합니다.
 
-    4. API 요청 함수: fetchVideos 함수 : 유튜브 API에 검색어와 페이지 토큰을 전달하여 비디오 데이터를 가져오는 함수입니다. 가져온 데이터는 setVideos로 이전 데이터에 추가됩니다.
+4. API 요청 함수: fetchVideos 함수 : 유튜브 API에 검색어와 페이지 토큰을 전달하여 비디오 데이터를 가져오는 함수입니다. 가져온 데이터는 setVideos로 이전 데이터에 추가됩니다.
 
-    5. 페이지 변경 함수: handleLoadMore 함수 : "더 보기" 버튼을 클릭했을 때 호출되는 함수입니다. 현재 페이지 토큰이 있다면 fetchVideos 함수를 호출하여 다음 페이지의 비디오를 가져옵니다.
+5. 페이지 변경 함수: handleLoadMore 함수 : "더 보기" 버튼을 클릭했을 때 호출되는 함수입니다. 현재 페이지 토큰이 있다면 fetchVideos 함수를 호출하여 다음 페이지의 비디오를 가져옵니다.
 
-    6. 렌더링: VideoSearch 컴포넌트 : 현재까지 가져온 비디오 데이터를 화면에 보여주는 역할을 하는 컴포넌트입니다.
+6. 렌더링: VideoSearch 컴포넌트 : 현재까지 가져온 비디오 데이터를 화면에 보여주는 역할을 하는 컴포넌트입니다.
 
-    7. "더 보기" 버튼 : 클릭하면 handleLoadMore 함수를 호출하여 다음 페이지의 비디오를 가져오도록 설정된 버튼입니다.
+7. "더 보기" 버튼 : 클릭하면 handleLoadMore 함수를 호출하여 다음 페이지의 비디오를 가져오도록 설정된 버튼입니다.
 
-    8. 컴포넌트 반환: return 문 : 페이지에는 검색 결과를 보여주는 VideoSearch 컴포넌트와 "더 보기" 버튼이 있는 부분이 렌더링됩니다.
+8. 컴포넌트 반환: return 문 : 페이지에는 검색 결과를 보여주는 VideoSearch 컴포넌트와 "더 보기" 버튼이 있는 부분이 렌더링됩니다.
 
 ### RapidAPI사용:
     RapidAPI는 다양한 웹 API에 액세스하고 이를 통합하며, API를 더 쉽게 찾고 사용할 수 있도록 도와주는 플랫폼입니다. 이 플랫폼은 개발자가 API를 손쉽게 탐색하고 사용할 수 있도록 API 호스팅 및 관리 서비스를 제공합니다.
 
+1. https://rapidapi.com/hub
+2. 검색: youtube v3 
+3. X-RapidAPI-Key 받아오기
+
 ### youtube API: 
-    1. YouTube API는 YouTube의 데이터 및 기능에 프로그래밍적으로 접근할 수 있게 하는 API입니다. YouTube API를 사용하면 YouTube 동영상, 채널, 댓글 등과 관련된 정보를 읽고 쓸 수 있습니다. YouTube API는 개발자들이 사용자 지정 애플리케이션을 만들고 YouTube 플랫폼과 상호 작용할 수 있도록 하는 강력한 도구입니다.<br>
-    2. YouTube Data API: YouTube 동영상, 채널, 댓글 등과 관련된 데이터에 접근할 수 있습니다. 동영상 검색, 특정 채널의 동영상 목록 가져오기 등이 가능합니다.<br>
-    3. YouTube Analytics API: YouTube 채널 및 동영상의 통계 데이터에 접근할 수 있습니다. 조회수, 좋아요 수, 신규 구독자 수 등을 확인할 수 있습니다.<br>
-    4. YouTube Live Streaming API: YouTube 실시간 스트리밍 서비스와 상호 작용할 수 있습니다. 실시간 스트리밍의 시작 및 종료, 댓글 관리 등이 가능합니다.<br>
-    5. YouTube Player API: 웹 페이지에 YouTube 동영상을 삽입하고 커스터마이징할 수 있는 API입니다. 특정 동영상을 재생, 일시 중지, 볼륨 조절 등이 가능합니다.<br>
-    6. YouTube Reporting API: YouTube 데이터를 보고서로 다운로드할 수 있는 API입니다. 수익 보고서, 광고 성능 보고서 등을 얻을 수 있습니다<br>
+1. YouTube API는 YouTube의 데이터 및 기능에 프로그래밍적으로 접근할 수 있게 하는 API입니다. YouTube API를 사용하면 YouTube 동영상, 채널, 댓글 등과 관련된 정보를 읽고 쓸 수 있습니다. YouTube API는 개발자들이 사용자 지정 애플리케이션을 만들고 YouTube 플랫폼과 상호 작용할 수 있도록 하는 강력한 도구입니다.<br>
+2. YouTube Data API: YouTube 동영상, 채널, 댓글 등과 관련된 데이터에 접근할 수 있습니다. 동영상 검색, 특정 채널의 동영상 목록 가져오기 등이 가능합니다.<br>
+3. YouTube Analytics API: YouTube 채널 및 동영상의 통계 데이터에 접근할 수 있습니다. 조회수, 좋아요 수, 신규 구독자 수 등을 확인할 수 있습니다.<br>
+4. YouTube Live Streaming API: YouTube 실시간 스트리밍 서비스와 상호 작용할 수 있습니다. 실시간 스트리밍의 시작 및 종료, 댓글 관리 등이 가능합니다.<br>
+5. YouTube Player API: 웹 페이지에 YouTube 동영상을 삽입하고 커스터마이징할 수 있는 API입니다. 특정 동영상을 재생, 일시 중지, 볼륨 조절 등이 가능합니다.<br>
+6. YouTube Reporting API: YouTube 데이터를 보고서로 다운로드할 수 있는 API입니다. 수익 보고서, 광고 성능 보고서 등을 얻을 수 있습니다<br>
 
 ### 검색기능 :
     
-    1. Search 컴포넌트를 사용하여 검색을 처리합니다. 사용자가 검색어를 입력하면 그에 따라 URL을 변경하여 새로운 경로로 이동하고 검색 결과를 표시합니다.<br>
+1. Search 컴포넌트를 사용하여 검색을 처리합니다. 사용자가 검색어를 입력하면 그에 따라 URL을 변경하여 새로운 경로로 이동하고 검색 결과를 표시합니다.<br>
     
-    2. 컴포넌트에서 상태값 searchKeyword를 사용하여 사용자가 입력한 검색어를 추적하고, setSearchKeyword를 통해 이 값을 변경합니다.<br>
+2. 컴포넌트에서 상태값 searchKeyword를 사용하여 사용자가 입력한 검색어를 추적하고, setSearchKeyword를 통해 이 값을 변경합니다.<br>
     
-    3.handleSearch 함수는 검색어가 있을 때만 URL을 변경하도록 구현되어 있습니다. 검색어가 비어 있지 않으면 useNavigate hook을 사용하여 React Router의 navigate 함수를 호출하여 새로운 경로로 이동합니다. 그 후에 검색어 상태를 초기화하여 빈 문자열로 설정하여 사용자가 새로운 검색을 할 수 있도록 합니다.<br>
-    또한, Enter 키를 누르면 검색어를 가지고 handleSearch 함수가 호출되도록 onKeyDown 이벤트도 구현되어 있습니다. 이렇게 하면 사용자가 텍스트 입력 후 엔터를 누르거나 버튼을 클릭하여 검색할 수 있습니다.<br>
-    결론적으로, 사용자가 검색어를 입력하면 해당 검색어로 새로운 경로로 이동하고, 검색 결과를 표시합니다.<br>
+3. handleSearch 함수는 검색어가 있을 때만 URL을 변경하도록 구현되어 있습니다. 검색어가 비어 있지 않으면 useNavigate hook을 사용하여 React Router의 navigate 함수를 호출하여 새로운 경로로 이동합니다. 그 후에 검색어 상태를 초기화하여 빈 문자열로 설정하여 사용자가 새로운 검색을 할 수 있도록 합니다.<br>
+또한, Enter 키를 누르면 검색어를 가지고 handleSearch 함수가 호출되도록 onKeyDown 이벤트도 구현되어 있습니다. 이렇게 하면 사용자가 텍스트 입력 후 엔터를 누르거나 버튼을 클릭하여 검색할 수 있습니다.<br>
+결론적으로, 사용자가 검색어를 입력하면 해당 검색어로 새로운 경로로 이동하고, 검색 결과를 표시합니다.<br>
 
 ## 트러블 슈팅
 <details>
 <summary>비디오 안나오는 error</summary>
-해결방법:   
+해결방법(API문제):   
 1. .env에서 api key 다시 체크
 2. `https://rapidapi.com/Glavier/api/youtube-v311`  안되면 v31로 변경.
 3. vs code 껏다 다시 키기.
 </details>   
 
-<details>
 <details>
 <summary>axios get 403 forbidden error</summary>
 해결방법:   
@@ -140,13 +143,12 @@ lazy 함수: 코드 스플리팅을 통해 컴포넌트의 번들 크기를 줄�
 <details>
 <summary>API호출 404 에러</summary>
 해결방법:   
-1. api.js를 통해 호출시 base_url 끝 경로에 /가 붙어 api url를 호출하지 못함.
-
+1. api.js를 통해 호출시 base_url 끝 경로에 /가 붙어 api url를 호출하지 못함
 </details> 
 
 <details>
 <summary>error: failed to push some refs to </summary>
-원인: 위와 같은 에러는 원격저장소(github)에 내 로컬(내컴퓨터)에는 없는 파일이 있을 때 내 파일을 push를 하면 발생하는 오류입니다.   
+원인: 위와 같은 에러는 원격저장소(github)에 내 로컬(내컴퓨터)에는 없는 파일이 있을 때 내 파일을 push를 하면 발생하는 오류.   
    
 해결방법:   
 1. 먼저 원격저장소에 파일을 내 로컬로 가져옵니다.
