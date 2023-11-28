@@ -1,19 +1,20 @@
 # 나만의 축구 유튜브 사이트 만들기
 환영합니다! 여러분을 축구의 세계로 초대합니다.
 
-여기는 나만의 축구 유튜브, "FOOTBALL YOUTUBE" 입니다평소 축구에 대한 무한한 열정과 흥미로운 여정을 함께 나누어보아요.
+여기는 나만의 축구 유튜브, "FOOTBALL YOUTUBE" 입니다. 평소 축구에 대한 무한한 열정과 흥미로운 여정을 함께 나누어보아요.
 
 다양한 축구 주제에 대한 흥미로운 유튜버들의 콘텐츠가 여러분을 기다리고 있습니다. 우리는 유튜버들이 제공하는 축구 영상들을 살펴보며 축구 매력에 푹 빠져보아요.
 
 새로운 관점과 함께 다가오는 경기, 축구의 미학, 선수들의 비하인드 스토리, 그리고 축구 세계의 뒷 이야기까지 모두 다룰 예정이에요. 여러분이 감동하고 깊이 생각하게 될 축구의 다양한 이야기를 공유하며, 함께 성장하는 공간이 되길 희망합니다.
 
-FOOTBALL YOUTUBE에서는 축구의 아름다움과 깊이 있는 내용을 탐험하며, 새로운 통찰력을 얻어보세요. 함께하는 여러분이 축구 세계를 더욱 풍요롭게 만들 것입니다.
+FOOTBALL YOUTUBE에서는 축구의 아름다움과 깊이 있는 내용을 탐험하며, 새로운 통찰력을 얻어보세요. 
 
-FOOTBALL YOUTUBE, 축구의 매력을 새롭게 발견하며, 함께 더 멋진 곳으로 나아가는 여정에 동참해보세요!
+축구의 매력을 새롭게 발견하며, 함께 더 멋진 곳으로 나아가는 여정에 동참해보세요!
 
 ## 완성작 보기
  
-<img src="https://ojs104.github.io/youtube-project/src/assets/img/cover-min.jpg">
+<img src="https://ojs104.github.io/youtube-project/src/assets/img/football-min.jpg">
+<img src="https://ojs104.github.io/youtube-project/src/assets/img/football2-min.jpg">
 
 ## 설치
 `npm install react-router-dom axios react-icon react-player sass react-helmet-async swiper`
@@ -119,6 +120,15 @@ lazy 함수: 코드 스플리팅을 통해 컴포넌트의 번들 크기를 줄�
     결론적으로, 사용자가 검색어를 입력하면 해당 검색어로 새로운 경로로 이동하고, 검색 결과를 표시합니다.<br>
 
 ## 트러블 슈팅
+<details>
+<summary>비디오 안나오는 error</summary>
+해결방법:   
+1. .env에서 api key 다시 체크
+2. `https://rapidapi.com/Glavier/api/youtube-v311`  안되면 v31로 변경.
+3. vs code 껏다 다시 키기.
+</details>   
+
+<details>
 <details>
 <summary>axios get 403 forbidden error</summary>
 해결방법:   
